@@ -32,7 +32,7 @@ export default {
         { name: 'usrB', email: 'bbb@bbb' },
         { name: 'usrC', email: 'ccc#ccc' },
       ],
-    };
+    }; 
   },
 };
 </script>
