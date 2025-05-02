@@ -13,7 +13,7 @@
 
   <div v-for="(user, index) in users2" :key="user.email">
     <p v-if="user.name === 'usrC'"> 
-      Index #{{ index }} 
+      Index #{{ index }}
       named {{ user.name }}
       has an email address: {{ user.email }}
     </p>
