@@ -8,6 +8,16 @@
                 height: 200px;
                 width: 200px;
             }
+            .box2 {
+                background-color: purple;
+                height: 200px;
+                width: 200px;
+            }
+            .box3 {
+                background-color: red;
+                height: 200px;
+                width: 200px;
+            }
         </style>
     </head>
     <body>
@@ -18,6 +28,8 @@
             <hr />
 
             <div v-if="isVisible" class="box"></div>
+            <div v-else-if="isVisible2" class="box2"></div>
+            <div v-else class="box3"></div>
         </div>
 
         <script src="https://unpkg.com/vue@3"></script>
@@ -26,7 +38,8 @@
                 data: function() {
                     return {
                         greeting: 'Hello Vue3!',
-                        isVisible: false
+                        isVisible: false,
+                        isVisible2: false
                     }
                 }
             })
